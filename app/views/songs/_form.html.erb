@@ -1,0 +1,11 @@
+<%= form_for(@song) do |f| %>
+  <%= f.text_field :title, placeholder:"title" %>
+  <%= f.text_field :artist, placeholder: "artist" %>
+  <%= f.submit %>
+
+<% flash.each do |type, message| %>
+    <p> <%= message %> </p>
+<%end%>
+
+<% end %>
+
